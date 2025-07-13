@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hero Sections */
 .hero-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('hero-bg.jpg') center/cover no-repeat;
+  background: linear-gradient(rgba(214, 179, 243, 0.6), rgba(130, 74, 177, 0.6)), url('hero-bg.jpg') center/cover no-repeat;
   padding: 6rem 0;
 }
 
