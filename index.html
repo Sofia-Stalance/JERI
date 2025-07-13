@@ -1,407 +1,384 @@
-<!--<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>JERI</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Joint Effort Rescue Initiative (JERI)</h1>
-    <p>Second Chances And Forever Homes</p>
-  </header>
-
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="adopt.html">Adopt</a>
-    <a href="about.html">About Us</a>
-    <a href="contact.html">Contact Us</a>
-  </nav>
-  <div style="display: flex; justify-content: center;">
-    <a href="https://buymeacoffee.com/sofiastalance">
-      <img src="donate.png" style="height: 300px; width: 600px;"> Image
-    </a>
-  </div>
-  <main>
-    <div class="container">
-      <div class="wrapper">
-        <img src="pup1.jpg" alt="Pup 1">
-        <img src="pup2.jpg" alt="Pup 2">
-        <img src="pup3.jpg" alt="Pup 3">
-      </div>
-    </div>
-
-    <div id="whyAdoptSection"></div> 
-
-    <div>
-      <h2>Hear their stories</h2> 
-      <pre>
-Mary: Discovered by the roadside with a severe eye infection leading to vision impairment
-      Following treatment and compassionate care, she has regained her sight.
-      She loves sun bathing and chasing birds in the garden.
-
-Luigi: Presented with significant parasitic infestation and malnourishment.
-        Through dedicated medical attention and consistent care, he has made a full recovery.
-        He now loves jumping and playing with his new friends.
-
-Vidia: Recovered from multiple injuries sustained due to acts of superstition.
-        She lost one leg but has healed fully.
-        She developed a notable fondness for flowers, often observed stashing her favorites.
-
-Diego: Rescued from a situation of physical abuse from dog fights, 
-        Diego exhibited signs of trauma and fear. 
-        Through patient rehabilitation he has learned to trust.
-        He loves cuddles and playing tug with puppies in particular
-      </pre>
-    </div>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 JERI - Joint Effort Rescue Initiative. All rights reserved.</p>
-  </footer>
-
-  <script>
-    // Your AJAX code goes here to load the content
-    var xhttp = new XMLHttpRequest(); 
-    xhttp.onreadystatechange = function(){ 
-        if (this.readyState == 4 && this.status == 200){ 
-            document.getElementById("whyAdoptSection").innerHTML = this.responseText; 
-        } 
-    }; 
-    xhttp.open("GET", "why_adopt_content.html", true); // Point to your new file
-    xhttp.send();
-  </script>
-</body>
-</html>-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JERI - Joint Effort Rescue Initiative</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JERI - Joint Effort Rescue Initiative</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <span class="fw-bold">JERI</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="adopt.html">Adopt</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    <li class="nav-item ms-lg-3">
-                        <a class="btn btn-primary" href="donate.html">Donate</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 animate__animated animate__fadeInLeft">
-                    <h1 class="display-4 fw-bold mb-4">Give Them <span class="highlight">A Second Chance</span></h1>
-                    <p class="lead mb-4">Every adoption creates space for another life to be saved</p>
-                    <div class="d-flex gap-3">
-                        <a href="adopt.html" class="btn btn-light btn-lg px-4">Adopt Now</a>
-                        <a href="#donate" class="btn btn-outline-light btn-lg px-4">Donate</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 animate__animated animate__fadeInRight">
-                    <img src="https://images.unsplash.com/photo-1586671267731-da2cf3ceeb80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Happy rescue dog" class="img-fluid hero-img">
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Featured Pets -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-12 text-center">
-                    <h2 class="display-5 fw-bold">Featured <span class="highlight">Pets</span></h2>
-                    <p class="lead">Meet some of our wonderful residents looking for homes</p>
-                </div>
-            </div>
-            
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card pet-card h-100">
-                        <div class="pet-badge">Adopt Me!</div>
-                        <img src="https://images.unsplash.com/photo-1588943211346-0908a1fb0b01?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Buddy the dog">
-                        <div class="card-body">
-                            <h5 class="card-title">Buddy</h5>
-                            <p class="card-text text-muted">Labrador Mix • 2 years • Male</p>
-                            <a href="adopt.html" class="btn btn-outline-primary w-100">Meet Buddy</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4">
-                    <div class="card pet-card h-100">
-                        <div class="pet-badge">Adopt Me!</div>
-                        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Luna the cat">
-                        <div class="card-body">
-                            <h5 class="card-title">Luna</h5>
-                            <p class="card-text text-muted">Domestic Shorthair • 1 year • Female</p>
-                            <a href="adopt.html" class="btn btn-outline-primary w-100">Meet Luna</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4">
-                    <div class="card pet-card h-100">
-                        <div class="pet-badge">Special Needs</div>
-                        <img src="https://images.unsplash.com/photo-1553284965-e2815db2e5a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Rocky the dog">
-                        <div class="card-body">
-                            <h5 class="card-title">Rocky</h5>
-                            <p class="card-text text-muted">Boxer Mix • 5 years • Male</p>
-                            <a href="adopt.html" class="btn btn-outline-primary w-100">Meet Rocky</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center mt-5">
-                <a href="adopt.html" class="btn btn-primary btn-lg px-5">View All Pets</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Donation Section -->
-    <section id="donate" class="py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-5 mb-lg-0">
-                    <h2 class="display-5 fw-bold mb-4">Your Support <span class="highlight">Saves Lives</span></h2>
-                    <div class="impact-stats mb-4">
-                        <div class="stat-item d-flex align-items-start mb-4">
-                            <div class="stat-icon me-3">❤️</div>
-                            <div>
-                                <h4 class="mb-2">Every $25 provides food for one week</h4>
-                                <p class="mb-0">Help keep our rescues healthy and happy</p>
-                            </div>
-                        </div>
-                        
-                        <div class="stat-item d-flex align-items-start mb-4">
-                            <div class="stat-icon me-3">💉</div>
-                            <div>
-                                <h4 class="mb-2">Every $50 covers vaccinations</h4>
-                                <p class="mb-0">Protect animals from preventable diseases</p>
-                            </div>
-                        </div>
-                        
-                        <div class="stat-item d-flex align-items-start">
-                            <div class="stat-icon me-3">🏥</div>
-                            <div>
-                                <h4 class="mb-2">Every $500 saves a critical case</h4>
-                                <p class="mb-0">Fund emergency medical treatments</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-6">
-                    <div class="card donation-card shadow-lg">
-                        <div class="card-body p-4 p-md-5">
-                            <h3 class="card-title mb-4">Make a Difference</h3>
-                            <div class="mb-4">
-                                <label class="form-label">Donation Amount</label>
-                                <div class="btn-group w-100 mb-3" role="group">
-                                    <button type="button" class="btn btn-outline-primary active">$25</button>
-                                    <button type="button" class="btn btn-outline-primary">$50</button>
-                                    <button type="button" class="btn btn-outline-primary">$100</button>
-                                </div>
-                                <input type="number" class="form-control" placeholder="Other amount">
-                            </div>
-                            <button class="btn btn-primary w-100 btn-lg">Donate Now</button>
-                            <p class="text-center mt-3 small text-muted">100% of donations go directly to animal care</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Success Stories -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-12 text-center">
-                    <h2 class="display-5 fw-bold">Happy <span class="highlight">Tails</span></h2>
-                    <p class="lead">See how our rescues are thriving in their forever homes</p>
-                </div>
-            </div>
-            
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Max with his family">
-                        <div class="card-body">
-                            <h5 class="card-title">Max's New Life</h5>
-                            <p class="card-text">"After being abandoned, Max found his perfect family through JERI. He's now living his best life!"</p>
-                            <a href="#" class="btn btn-sm btn-outline-primary">Read Full Story</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Bella with her family">
-                        <div class="card-body">
-                            <h5 class="card-title">Bella's Journey</h5>
-                            <p class="card-text">"Bella was rescued from a hoarding situation. Today she's the queen of her loving home."</p>
-                            <a href="#" class="btn btn-sm btn-outline-primary">Read Full Story</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="https://images.unsplash.com/photo-1561037404-61cd46aa615b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Charlie with his family">
-                        <div class="card-body">
-                            <h5 class="card-title">Charlie's Recovery</h5>
-                            <p class="card-text">"After being hit by a car, Charlie made a full recovery and found his forever family."</p>
-                            <a href="#" class="btn btn-sm btn-outline-primary">Read Full Story</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <h5 class="mb-3">JERI</h5>
-                    <p>Joint Effort Rescue Initiative is dedicated to saving animals and finding them loving forever homes.</p>
-                </div>
-                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-                    <h5 class="mb-3">Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="index.html">Home</a></li>
-                        <li class="mb-2"><a href="adopt.html">Adopt</a></li>
-                        <li class="mb-2"><a href="about.html">About</a></li>
-                        <li class="mb-2"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="mb-3">Contact Us</h5>
-                    <p>123 Rescue Way<br>Anytown, ST 12345<br>Phone: (555) 123-4567<br>Email: info@jeri-rescue.org</p>
-                </div>
-                <div class="col-lg-3">
-                    <h5 class="mb-3">Follow Us</h5>
-                    <div class="social-links">
-                        <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="me-2"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="me-2"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="me-2"><i class="bi bi-youtube"></i></a>
-                    </div>
-                    <div class="mt-3">
-                        <a href="#" class="btn btn-outline-light btn-sm">Volunteer</a>
-                        <a href="#" class="btn btn-primary btn-sm ms-2">Donate</a>
-                    </div>
-                </div>
-            </div>
-            <hr class="my-4">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="small mb-0">&copy; 2023 JERI. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <p class="small mb-0">
-                        <a href="#" class="text-decoration-none">Privacy Policy</a> | 
-                        <a href="#" class="text-decoration-none">Terms of Service</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Simple animation trigger
-        document.addEventListener('DOMContentLoaded', function() {
-            const animateElements = document.querySelectorAll('.animate-on-scroll');
-            
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('animate__animated', 'animate__fadeInUp');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.1 });
-            
-            animateElements.forEach(el => observer.observe(el));
-        });
-    </script>
-    <section class="py-5 bg-white">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-purple">
     <div class="container">
-        <div class="row mb-5">
-            <div class="col-12 text-center">
-                <h2 class="display-5 fw-bold">Happy <span class="highlight-text">Tails</span></h2>
-                <p class="lead">See how our rescues are thriving in their forever homes</p>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-12">
-                <div class="stories-carousel swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="story-card">
-                                <div class="story-media">
-                                    <div class="ratio ratio-16x9">
-                                        <iframe src="https://www.youtube.com/embed/example1" allowfullscreen></iframe>
-                                    </div>
-                                </div>
-                                <div class="story-body">
-                                    <h4>Max's Journey</h4>
-                                    <p>From abandoned to adored, see how Max found his perfect family</p>
-                                    <a href="#" class="btn btn-sm btn-outline-primary">Read Full Story</a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="swiper-slide">
-                            <div class="story-card">
-                                <div class="story-media">
-                                    <img src="assets/success/luna.jpg" alt="Luna with her family">
-                                </div>
-                                <div class="story-body">
-                                    <h4>Luna's New Life</h4>
-                                    <p>This senior dog proved you can teach an old dog new tricks</p>
-                                    <a href="#" class="btn btn-sm btn-outline-primary">Read Full Story</a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- More stories -->
-                    </div>
-                    
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
-            </div>
-        </div>
+      <a class="navbar-brand" href="index.html">
+        <img src="logo.png" alt="JERI Logo" height="50" class="d-inline-block align-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="adopt.html">Adopt</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link btn-cta" href="adopt.html">Emergency Rescue</a></li>
+        </ul>
+      </div>
     </div>
-</section>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="container text-center py-5">
+      <h1 class="display-4 fw-bold text-white">Joint Effort Rescue Initiative</h1>
+      <p class="lead text-white">Second Chances And Forever Homes</p>
+      <div class="mt-4">
+        <a href="adopt.html" class="btn btn-primary btn-lg me-2">Meet Our Pets</a>
+        <a href="#personality-quiz" class="btn btn-outline-light btn-lg">Find Your Match</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Donation Banner -->
+  <section class="donation-banner py-3 bg-light">
+    <div class="container text-center">
+      <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+        <p class="mb-2 mb-md-0 me-md-3 fw-bold">Help us save more lives:</p>
+        <a href="https://buymeacoffee.com/sofiastalance" class="donate-btn">
+          <img src="donate.png" alt="Donate Now" class="img-fluid" style="max-height: 80px;">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pet Slider -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Featured Pets</h2>
+      <div id="featuredPetsCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row justify-content-center">
+              <div class="col-md-4 mb-4">
+                <div class="card pet-card h-100">
+                  <img src="pup1.jpg" class="card-img-top" alt="Pup 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Mary</h5>
+                    <p class="card-text">Regained her sight after severe infection. Loves sunbathing!</p>
+                    <a href="adopt.html" class="btn btn-purple">Meet Mary</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card pet-card h-100">
+                  <img src="pup2.jpg" class="card-img-top" alt="Pup 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Luigi</h5>
+                    <p class="card-text">Recovered from malnourishment. Loves playing with friends!</p>
+                    <a href="adopt.html" class="btn btn-purple">Meet Luigi</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-md-4 mb-4">
+                <div class="card pet-card h-100">
+                  <img src="pup3.jpg" class="card-img-top" alt="Pup 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Vidia</h5>
+                    <p class="card-text">Thriving after losing a leg. Adores flowers!</p>
+                    <a href="adopt.html" class="btn btn-purple">Meet Vidia</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card pet-card h-100">
+                  <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg" class="card-img-top" alt="Pico and Poppy">
+                  <div class="card-body">
+                    <h5 class="card-title">Pico & Poppy</h5>
+                    <p class="card-text">2-month-old bonded siblings looking for a home together!</p>
+                    <a href="adopt.html" class="btn btn-purple">Meet Them</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#featuredPetsCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#featuredPetsCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Personality Quiz Section -->
+  <section id="personality-quiz" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Find Your Perfect Pet Match</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card shadow">
+            <div class="card-body p-4">
+              <div id="quiz-container">
+                <div id="quiz-intro">
+                  <h3 class="mb-4">Pet Personality Quiz</h3>
+                  <p>Answer a few questions to discover which pet would be the best match for your lifestyle!</p>
+                  <button id="start-quiz" class="btn btn-purple">Start Quiz</button>
+                </div>
+                <div id="quiz-questions" class="d-none">
+                  <div class="quiz-progress mb-3">
+                    <div class="progress">
+                      <div id="quiz-progress-bar" class="progress-bar" role="progressbar" style="width: 0%"></div>
+                    </div>
+                    <small id="progress-text" class="text-muted">Question 1 of 5</small>
+                  </div>
+                  <div id="question-container"></div>
+                  <div id="quiz-navigation" class="mt-4">
+                    <button id="prev-question" class="btn btn-outline-secondary me-2" disabled>Previous</button>
+                    <button id="next-question" class="btn btn-purple">Next</button>
+                  </div>
+                </div>
+                <div id="quiz-results" class="d-none text-center py-4">
+                  <h3 class="mb-4">Your Perfect Match Is...</h3>
+                  <div id="result-content"></div>
+                  <button id="retake-quiz" class="btn btn-outline-purple mt-4">Retake Quiz</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Stories -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Success Stories</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center">
+              <img src="https://images.unsplash.com/photo-1583511655826-05700d52f4d9" class="rounded-circle mb-3" width="150" height="150" alt="Happy adopter">
+              <h5>Max & The Johnson Family</h5>
+              <p>"Max has brought so much joy to our home. The adoption process was smooth and we got all the support we needed."</p>
+              <div class="rating mb-2">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center">
+              <img src="https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5" class="rounded-circle mb-3" width="150" height="150" alt="Happy adopter">
+              <h5>Luna & Sarah</h5>
+              <p>"As a first-time pet owner, I was nervous, but JERI provided training resources and follow-up support that made all the difference."</p>
+              <div class="rating mb-2">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star-half-alt text-warning"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2" class="rounded-circle mb-3" width="150" height="150" alt="Happy adopter">
+              <h5>Rocky & The Martinez Family</h5>
+              <p>"We adopted Rocky as a foster-to-adopt and knew within a week he was meant to be part of our family forever."</p>
+              <div class="rating mb-2">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Virtual Meet & Greet -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2>Virtual Meet & Greet</h2>
+          <p class="lead">Can't visit in person? Schedule a virtual meeting with your potential new pet!</p>
+          <p>Our innovative virtual meet-and-greet system allows you to interact with pets from the comfort of your home before deciding to adopt.</p>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="fas fa-check-circle text-purple me-2"></i> Live video sessions with pets</li>
+            <li class="mb-2"><i class="fas fa-check-circle text-purple me-2"></i> Ask questions to caretakers</li>
+            <li class="mb-2"><i class="fas fa-check-circle text-purple me-2"></i> See how pets interact in real-time</li>
+          </ul>
+          <a href="contact.html" class="btn btn-purple">Schedule a Session</a>
+        </div>
+        <div class="col-lg-6">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/9PnbKL3wuH4" title="Virtual Pet Meet & Greet" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Adopt Section (AJAX loaded) -->
+  <section id="whyAdoptSection" class="py-5">
+    <div class="container text-center">
+      <div class="spinner-border text-purple" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Foster First Program -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+          <h2>Try Our Foster First Program</h2>
+          <p class="lead">Not sure if you're ready to adopt? Foster first!</p>
+          <p>Our unique Foster First program allows you to temporarily care for a pet with all supplies provided by us. It's the perfect way to test compatibility before making a lifelong commitment.</p>
+          <div class="d-flex align-items-center mb-3">
+            <div class="bg-purple text-white rounded-circle p-3 me-3">
+              <i class="fas fa-paw fa-2x"></i>
+            </div>
+            <div>
+              <h5 class="mb-0">All Supplies Provided</h5>
+              <p class="mb-0">Food, bedding, toys, and medical care included</p>
+            </div>
+          </div>
+          <div class="d-flex align-items-center mb-3">
+            <div class="bg-purple text-white rounded-circle p-3 me-3">
+              <i class="fas fa-hand-holding-heart fa-2x"></i>
+            </div>
+            <div>
+              <h5 class="mb-0">Flexible Duration</h5>
+              <p class="mb-0">From 2 weeks to 3 months - you choose</p>
+            </div>
+          </div>
+          <div class="d-flex align-items-center">
+            <div class="bg-purple text-white rounded-circle p-3 me-3">
+              <i class="fas fa-home fa-2x"></i>
+            </div>
+            <div>
+              <h5 class="mb-0">Adoption Priority</h5>
+              <p class="mb-0">First option to adopt if you fall in love</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee" alt="Foster pet with family" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Emergency Rescue Banner -->
+  <section class="py-4 bg-danger text-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-9">
+          <h3 class="mb-3 mb-md-0"><i class="fas fa-phone-alt me-2"></i> Emergency Animal Rescue Hotline</h3>
+        </div>
+        <div class="col-md-3 text-md-end">
+          <a href="tel:+18005551234" class="btn btn-light">Call Now: 1-800-555-1234</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h5>About JERI</h5>
+          <p>Joint Effort Rescue Initiative is a non-profit organization dedicated to rescuing, rehabilitating, and rehoming animals in need.</p>
+          <div class="social-icons">
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html" class="text-white">Home</a></li>
+            <li class="mb-2"><a href="adopt.html" class="text-white">Adopt</a></li>
+            <li class="mb-2"><a href="about.html" class="text-white">About</a></li>
+            <li class="mb-2"><a href="contact.html" class="text-white">Contact</a></li>
+            <li><a href="#" class="text-white">Volunteer</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5>Contact Info</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 123 Rescue Way, Pet City, PC 12345</li>
+            <li class="mb-2"><i class="fas fa-phone-alt me-2"></i> (123) 456-7890</li>
+            <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@jeri-rescue.org</li>
+            <li><i class="fas fa-clock me-2"></i> Mon-Fri: 9AM-6PM</li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h5>Newsletter</h5>
+          <p>Subscribe to get updates on new arrivals and events.</p>
+          <form class="mb-3">
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Your email">
+              <button class="btn btn-purple" type="submit">Subscribe</button>
+            </div>
+          </form>
+          <img src="https://via.placeholder.com/150x80?text=Pet+Approved" alt="Certification" class="img-fluid">
+        </div>
+      </div>
+      <hr class="my-4 bg-secondary">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="mb-0">&copy; 2025 JERI - Joint Effort Rescue Initiative. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#" class="text-white me-3">Privacy Policy</a>
+          <a href="#" class="text-white">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // AJAX to load why adopt content
+    document.addEventListener('DOMContentLoaded', function() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("whyAdoptSection").innerHTML = this.responseText;
+        }
+      };
+      xhttp.open("GET", "why_adopt_content.html", true);
+      xhttp.send();
+    });
+  </script>
 </body>
 </html>
